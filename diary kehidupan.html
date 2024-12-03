@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Diary Pribadi">
+  <title>Diary Pribadi - Berbagi Kisahmu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Diary Pribadi BY BIAN</h1>
+      <p>Selamat datang di tempat di mana kamu bisa menulis kisahmu.</p>
+      <p> jangan khawatirkan privasi mu,disini privasi 100% terjaga</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="entry-form">
+      <h2>Tulis Entri Baru</h2>
+      <form id="diary-form">
+        <label for="entry-title">Judul:</label>
+        <input type="text" id="entry-title" name="title" placeholder="Masukkan judul entri..." required>
+
+        <label for="entry-date">Tanggal:</label>
+        <input type="date" id="entry-date" name="date" required>
+
+        <label for="entry-text">Isi Diary:</label>
+        <textarea id="entry-text" name="text" placeholder="Tulis kisahmu di sini..." rows="6" required></textarea>
+        
+        <button type="submit">Simpan Entri</button>
+      </form>
+    </section>
+
+    <section class="diary-entries">
+      <h2>Entri Terbaru</h2>
+      <div id="entries-list">
+        <!-- Entri diary akan muncul di sini -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Diary Pribadi BY BIAN | Semua hak dilindungi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
